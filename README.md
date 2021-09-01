@@ -72,8 +72,8 @@ The HPA (Horizontal Pod Autoscaler) is the responsible for managing the pod repl
 $ kubectl apply -f .k8s/hpa.yaml
 ```
 
-### Finished!!! 🎆
- 
+🚨🚨 Warning, for your HPA working correctly, you shall to configure some resource limit in your deployment if not an overload can occur.
+
 #### Next time!!! 👍🏻
-I will to speak more about the configs contained the deployment.yaml, service.yaml and hpa.yaml.
+I will to speak more about the configs contained the deployment.yaml, service.yaml and hpa.yaml. Also will speak about set resource limits.
 
