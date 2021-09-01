@@ -31,11 +31,11 @@ In flag --zone you shall to put the correct region of your cluster, for example 
 Generate and upload of docker image in Google Cloud Docker HUB
 To Generate, execute this command, where the project-id param you can get in URL of GCP "project="
 ```console
-$ docker build -t gcr.io/[project-id]/simple-flask-example
+$ docker build -t gcr.io/[project-id]/simple-fastapi-example
 ```
 To upload
 ```console
-$ docker push gcr.io/[project-id]/simple-flask-example
+$ docker push gcr.io/[project-id]/simple-fastapi-example
 ```
 
 #### Creating Loadbalancer
@@ -60,6 +60,20 @@ $ kubectl apply -f .k8s/deployment.yaml
 
 For testing, you can access by browser the Loadbalancer external IP, for example 192.168.0.1
 
+#### Main AutoPilot characteristics
+1. GKE provisions and manages the cluster's underlying infrastructure, including nodes and node pools, giving you an optimized cluster with a hands-off experience
+2. Auto Vertical Scalling 
+3. Basically you need just to execute kubectl commands🤘🏻
+
+#### Horizontal Pod Autoscaller (HPA)
+The HPA (Horizontal Pod Autoscaler) is the responsible for managing the pod replication, through of a configuration in the hpa.yaml, you can install a metric collector to get the most suitable configuguration for your Autoscaller.
+
+```console
+$ kubectl apply -f .k8s/hpa.yaml
+```
+
+### Finished!!! 🎆
+ 
 #### Next time!!! 👍🏻
-I will to speak more about LoadBalance in GKE, Autoscaling, advantages and disadvantages of AutoPilot Cluster.
+I will to speak more about the configs contained the deployment.yaml, service.yaml and hpa.yaml.
 
