@@ -16,6 +16,7 @@ You can to create the cluster in the GUI of GCP.
 2. Choice GKE Autpilot and click in CONFIGURE button
 3. Choice your VPC and Subnetwork (Pre-configured) or use default this one 🤣
 4. Click in CREATE
+
 ![https://i.imgur.com/P9N47I9.png](https://i.imgur.com/P9N47I9.png) 
 ![https://i.imgur.com/nbXdtKX.png](https://i.imgur.com/nbXdtKX.png) 
 
