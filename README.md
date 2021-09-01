@@ -3,7 +3,7 @@ Hi guys, now I gonna show you how to deploy a auto-pilot cluster in Google Cloud
 
 #### Prerequisites
 1. An Account on GCP
-2. Install gcloud in your machine (https://cloud.google.com/sdk/docs/install)
+2. Install Google cloud SDK (gcloud) in your machine (https://cloud.google.com/sdk/docs/install)
 3. Install Kubectl in your machine (https://kubernetes.io/docs/tasks/tools/)
 4. Install Docker in your machine (https://docs.docker.com/get-docker/)
 
